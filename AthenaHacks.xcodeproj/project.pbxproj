@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279F75833AE2C8C51DA1EE71 /* Pods_AthenaHacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */; };
+		C910A2CD91C936DA60E60377 /* Pods_AthenaHacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */; };
+		E705EE586B9C424E3255BD9A /* Pods_AthenaHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7377ED41456424733333FDF2 /* Pods_AthenaHacks.framework */; };
 		FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AC82042281500F6CD31 /* AppDelegate.swift */; };
 		FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995ACA2042281500F6CD31 /* ViewController.swift */; };
 		FB995ACE2042281500F6CD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB995ACC2042281500F6CD31 /* Main.storyboard */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03874A03D91C616C3DC9C3B9 /* Pods-AthenaHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks.release.xcconfig"; sourceTree = "<group>"; };
+		0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthenaHacksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthenaHacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443B724AC09B15B69166BAB0 /* Pods-AthenaHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks.debug.xcconfig"; sourceTree = "<group>"; };
+		729BFAE163874F0F03A164B3 /* Pods-AthenaHacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7377ED41456424733333FDF2 /* Pods_AthenaHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthenaHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CABCA4F0A3C60CAC306C0B3 /* Pods-AthenaHacksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksUITests/Pods-AthenaHacksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		84CD5FF2DAA0386BEDA1F92A /* Pods-AthenaHacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests.release.xcconfig"; sourceTree = "<group>"; };
+		952E7717FA4AAC19F7D5FF8E /* Pods-AthenaHacksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksUITests/Pods-AthenaHacksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB995AC52042281400F6CD31 /* AthenaHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AthenaHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB995AC82042281500F6CD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB995ACA2042281500F6CD31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E705EE586B9C424E3255BD9A /* Pods_AthenaHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C910A2CD91C936DA60E60377 /* Pods_AthenaHacksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279F75833AE2C8C51DA1EE71 /* Pods_AthenaHacksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DCB6444831BDD59521F9AD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				443B724AC09B15B69166BAB0 /* Pods-AthenaHacks.debug.xcconfig */,
+				03874A03D91C616C3DC9C3B9 /* Pods-AthenaHacks.release.xcconfig */,
+				729BFAE163874F0F03A164B3 /* Pods-AthenaHacksTests.debug.xcconfig */,
+				84CD5FF2DAA0386BEDA1F92A /* Pods-AthenaHacksTests.release.xcconfig */,
+				952E7717FA4AAC19F7D5FF8E /* Pods-AthenaHacksUITests.debug.xcconfig */,
+				7CABCA4F0A3C60CAC306C0B3 /* Pods-AthenaHacksUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		890C506BA8206AA4131F8A1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7377ED41456424733333FDF2 /* Pods_AthenaHacks.framework */,
+				37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */,
+				0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB995ABC2042281400F6CD31 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				FB995ADC2042281600F6CD31 /* AthenaHacksTests */,
 				FB995AE72042281600F6CD31 /* AthenaHacksUITests */,
 				FB995AC62042281400F6CD31 /* Products */,
+				0DCB6444831BDD59521F9AD7 /* Pods */,
+				890C506BA8206AA4131F8A1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB995AED2042281600F6CD31 /* Build configuration list for PBXNativeTarget "AthenaHacks" */;
 			buildPhases = (
+				02F2DCF7CA858A3862E08774 /* [CP] Check Pods Manifest.lock */,
 				FB995AC12042281400F6CD31 /* Sources */,
 				FB995AC22042281400F6CD31 /* Frameworks */,
 				FB995AC32042281400F6CD31 /* Resources */,
+				245AC110670E67A38CA154C8 /* [CP] Embed Pods Frameworks */,
+				58A8C640D8A7AB2386643BD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB995AF02042281600F6CD31 /* Build configuration list for PBXNativeTarget "AthenaHacksTests" */;
 			buildPhases = (
+				D1ECF8F53BBFEE88D3640CB2 /* [CP] Check Pods Manifest.lock */,
 				FB995AD52042281600F6CD31 /* Sources */,
 				FB995AD62042281600F6CD31 /* Frameworks */,
 				FB995AD72042281600F6CD31 /* Resources */,
+				AB8F010D7A45FCF4FC9BF95B /* [CP] Embed Pods Frameworks */,
+				2C82B16CAE456FEFDDB7B99D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB995AF32042281600F6CD31 /* Build configuration list for PBXNativeTarget "AthenaHacksUITests" */;
 			buildPhases = (
+				E5467FF1279B7379E1029472 /* [CP] Check Pods Manifest.lock */,
 				FB995AE02042281600F6CD31 /* Sources */,
 				FB995AE12042281600F6CD31 /* Frameworks */,
 				FB995AE22042281600F6CD31 /* Resources */,
+				853913B5B7F6B0D656C46D30 /* [CP] Embed Pods Frameworks */,
+				282C95D73CFDC3D12692CBE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,166 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F2DCF7CA858A3862E08774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AthenaHacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		245AC110670E67A38CA154C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+				"${BUILT_PRODUCTS_DIR}/HyperTrack/HyperTrack.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyperTrack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		282C95D73CFDC3D12692CBE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacksUITests/Pods-AthenaHacksUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C82B16CAE456FEFDDB7B99D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A8C640D8A7AB2386643BD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853913B5B7F6B0D656C46D30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacksUITests/Pods-AthenaHacksUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB8F010D7A45FCF4FC9BF95B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1ECF8F53BBFEE88D3640CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AthenaHacksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5467FF1279B7379E1029472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AthenaHacksUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB995AC12042281400F6CD31 /* Sources */ = {
@@ -424,6 +633,7 @@
 		};
 		FB995AEE2042281600F6CD31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443B724AC09B15B69166BAB0 /* Pods-AthenaHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +648,7 @@
 		};
 		FB995AEF2042281600F6CD31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03874A03D91C616C3DC9C3B9 /* Pods-AthenaHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +663,7 @@
 		};
 		FB995AF12042281600F6CD31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 729BFAE163874F0F03A164B3 /* Pods-AthenaHacksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +680,7 @@
 		};
 		FB995AF22042281600F6CD31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CD5FF2DAA0386BEDA1F92A /* Pods-AthenaHacksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +697,7 @@
 		};
 		FB995AF42042281600F6CD31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952E7717FA4AAC19F7D5FF8E /* Pods-AthenaHacksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +713,7 @@
 		};
 		FB995AF52042281600F6CD31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CABCA4F0A3C60CAC306C0B3 /* Pods-AthenaHacksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
