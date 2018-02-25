@@ -170,7 +170,7 @@ extension NewRunViewController: CLLocationManagerDelegate {
 }*/
 
 
-extension NewRunViewController: MKMapViewDelegate {
+/*extension NewRunViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         guard let polyline = overlay as? MKPolyline else {
             return MKOverlayRenderer(overlay: overlay)
@@ -180,5 +180,5 @@ extension NewRunViewController: MKMapViewDelegate {
         renderer.lineWidth = 10
         return renderer
     }
-}
+}*/
 
