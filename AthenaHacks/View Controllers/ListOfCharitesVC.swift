@@ -79,15 +79,14 @@ class ListOfCharitesVC: UIViewController, UITableViewDelegate, UITableViewDataSo
             let charity = list[indexPath.row] as! NSDictionary
             let charityName = charity["charityName"] as? String
             
-            self.ref.child("users").child(self.userUID!).setValue(["charity": charityName])
+            //self.ref.child("users").child(self.userUID!).setValue(["charity": charityName])
             let alertController = UIAlertController(title: "Saved!",
-                                                    message: "You selected \(charityName) as your charity!",
-                                                    preferredStyle: .actionSheet)
+                                                    message: "You selected \(charityName!) as your charity!",
+                                                    preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
-                self.performSegue(withIdentifier: "toMapFromList", sender: self)
+                self.performSegue(withIdentifier: "toMapSegue", sender: self)
             })
             present(alertController, animated: true)
-            
         }
     }
     

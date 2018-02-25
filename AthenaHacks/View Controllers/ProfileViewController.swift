@@ -27,7 +27,7 @@ class ProfileViewController: UIViewController {
         
         profileImageView.layer.cornerRadius = 30
         profileImageView.clipsToBounds = true
-        var image: UIImage = UIImage(named: "owl")!
+        var image: UIImage = #imageLiteral(resourceName: "owl")
         profileImageView = UIImageView(image: image)
         
         changeCharityButton.layer.cornerRadius = 15

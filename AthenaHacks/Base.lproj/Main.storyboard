@@ -75,7 +75,7 @@
                         <outlet property="signInButton" destination="FoE-JH-aVb" id="VHO-R1-Id7"/>
                         <outlet property="signUpButton" destination="5Fy-0K-Aah" id="eCV-fM-wxT"/>
                         <outlet property="usernameField" destination="xCB-Wy-7vB" id="9cw-Te-82b"/>
-                        <segue destination="kJV-oJ-wAN" kind="presentation" identifier="toMapController" id="bjY-4z-dEm"/>
+                        <segue destination="80J-qx-uUP" kind="show" identifier="toMapFromLogin" id="C24-2o-S52"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -123,12 +123,12 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="xwZ-W9-v6H" id="lMO-BN-Gdd"/>
-                        <segue destination="kJV-oJ-wAN" kind="show" identifier="toMapFromList" id="UC4-NI-PSI"/>
+                        <segue destination="80J-qx-uUP" kind="show" identifier="toMapSegue" id="feP-BK-hvO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAl-eU-81u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="-1364"/>
+            <point key="canvasLocation" x="956" y="-1339"/>
         </scene>
         <!--Charity Cheetah View Controller-->
         <scene sceneID="cce-31-OKn">
@@ -244,7 +244,7 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" id="GJn-bN-Kwk" customClass="ProfileViewController" customModule="AthenaHacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zgs-C5-EqE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5o6-CB-Z0X">
@@ -601,7 +601,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="nC1-Cf-JDv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qfY-Ro-tdi">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -760,7 +760,7 @@
                     <tabBarItem key="tabBarItem" title="Run" id="pGE-5t-nwH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g8p-Xx-QVR">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="-44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -773,10 +773,10 @@
             <point key="canvasLocation" x="956" y="-654"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="UC4-NI-PSI"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="BeneFIT@0.5x" width="179" height="150"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="C24-2o-S52"/>
+    </inferredMetricsTieBreakers>
 </document>
