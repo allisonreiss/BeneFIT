@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPassTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     
-    var user: AnyObject?
+    var userUID: String?
     
     var handle: AuthStateDidChangeListenerHandle?
     var gradient : CAGradientLayer!
@@ -43,6 +43,7 @@ class SignUpViewController: UIViewController {
                 print(error?.localizedDescription)
             } else {
                 print(user!.uid)
+                self.userUID = user!.uid
                 print("Yay sign up worked!")
                 self.performSegue(withIdentifier: "toCategorySegue", sender: self)
             }
@@ -51,6 +52,7 @@ class SignUpViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! CharityViewController
+        destination.userUID = self.userUID
         
     }
     

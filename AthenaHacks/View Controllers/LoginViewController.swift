@@ -45,7 +45,6 @@ class LoginViewController: UIViewController {
                 let uid = user.uid
                 let email = user.email
                 print(uid)
-                
             }
             if(user != nil) {
                 print("yay create user worked")
@@ -59,7 +58,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {        
 
     }
     
