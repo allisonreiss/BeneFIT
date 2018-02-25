@@ -6,8 +6,27 @@ target 'AthenaHacks' do
   use_frameworks!
 
   # Pods for AthenaHacks
-  pod 'HyperTrack'
+#  pod 'HyperTrack'
   pod 'AFNetworking', '~> 3.0'
+  pod 'HyperTrack'
+
+    post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.2'
+            end
+        end
+
+        Dir.glob('Pods/SQLite.swift/Sources/SQLite/**/*.swift').each { |path|
+            begin
+                text = File.read(path)
+                text = text.gsub(/import CSQLite/, 'import SQLite3')
+                File.open(path, 'w') { |file| file.puts text }
+                rescue Exception
+                puts "Unable to patch #{path}: #{$!}"
+            end
+        }
+    end
 
   target 'AthenaHacksTests' do
     inherit! :search_paths
