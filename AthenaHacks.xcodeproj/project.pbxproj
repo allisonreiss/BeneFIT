@@ -256,7 +256,6 @@
 				FB9290262042B22C00E2F0C5 /* NewRunViewController.swift */,
 				FB92902E2042B9EE00E2F0C5 /* RunDetailsViewController.swift */,
 				267776742042D40800236CB2 /* SignUpViewController.swift */,
-
 				FBC2E7322043242600A3E86C /* CharityCheetahViewController.swift */,
 				2677767E2042F82700236CB2 /* ListOfCharitesVC.swift */,
 				267776802042F83C00236CB2 /* CharityDetailsViewController.swift */,
@@ -628,7 +627,6 @@
 				FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */,
 				FB9290372042C4DF00E2F0C5 /* MulticolorPolyline.swift in Sources */,
 				2677767B2042E5AD00236CB2 /* CharityCategoryCell.swift in Sources */,
-
 				26777683204302BC00236CB2 /* CharityCell.swift in Sources */,
 				FB9290312042BD6E00E2F0C5 /* UnitExtensions.swift in Sources */,
 				FB92903B2042F05100E2F0C5 /* CoreDataStack.swift in Sources */,
