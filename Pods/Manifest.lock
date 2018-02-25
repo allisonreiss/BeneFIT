@@ -29,7 +29,7 @@ PODS:
   - SQLite.swift/standard (0.11.2)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 3.0)
   - HyperTrack
 
 SPEC CHECKSUMS:
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   HyperTrack: 2cc1ebee16af6630a5f787f075c16080295fa4ff
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 099eafe57e843aea464546a9507637c13fa2e79b
+PODFILE CHECKSUM: 440cd35f8d0584cc34302c9a0d3e44bbfd49d24d
 
 COCOAPODS: 1.4.0

@@ -7,7 +7,7 @@ target 'AthenaHacks' do
 
   # Pods for AthenaHacks
   pod 'HyperTrack'
-  pod 'AFNetworking'
+  pod 'AFNetworking', '~> 3.0'
 
   target 'AthenaHacksTests' do
     inherit! :search_paths
