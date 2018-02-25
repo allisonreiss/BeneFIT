@@ -42,9 +42,9 @@ class SignUpViewController: UIViewController {
             if(error != nil) {
                 print(error?.localizedDescription)
             } else {
-                self.user = user
-                self.performSegue(withIdentifier: "toCategorySegue", sender: self)
+                print(user!.uid)
                 print("Yay sign up worked!")
+                self.performSegue(withIdentifier: "toCategorySegue", sender: self)
             }
         }
     }
@@ -61,7 +61,6 @@ class SignUpViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            // ...
         }
     }
     override func viewWillDisappear(_ animated: Bool) {

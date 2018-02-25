@@ -68,6 +68,13 @@ class ListOfCharitesVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let list = list {
+            let charity = list[indexPath.row] as! NSDictionary
+            let charityName = charity["charityName"]
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
