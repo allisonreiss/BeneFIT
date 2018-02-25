@@ -8,7 +8,6 @@ target 'AthenaHacks' do
   # Pods for AthenaHacks
 #  pod 'HyperTrack'
   pod 'AFNetworking', '~> 3.0'
-  pod 'BDBOAuth1Manager', '2.0.0'
   pod 'HyperTrack'
 
     post_install do |installer|
