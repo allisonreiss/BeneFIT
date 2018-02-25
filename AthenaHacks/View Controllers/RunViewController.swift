@@ -11,7 +11,6 @@ import MapKit
 import CoreLocation
 import HyperTrack
 
-HyperTrack.initialize("pk_8ca75b3f33fc4fe80123815d77754fe4bbcc6c5a")
 
 class RunViewController: UIViewController, CLLocationManagerDelegate {
     

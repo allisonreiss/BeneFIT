@@ -269,6 +269,11 @@
 					FB995AC42042281400F6CD31 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FB995AD82042281600F6CD31 = {
 						CreatedOnToolsVersion = 9.2;
