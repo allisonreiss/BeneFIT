@@ -343,6 +343,21 @@
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="858.62068965517244"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IUm-8d-swX">
+            <objects>
+                <viewController id="8Uu-MP-cBX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQv-mU-MJW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JnM-2o-YUX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k16-5y-IkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791" y="797"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fPd-YV-ljv">
             <objects>
@@ -437,10 +452,8 @@
                                         <rect key="frame" x="10" y="0.0" width="355" height="187.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uP8-rr-l1z" userLabel="Launch Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="0.0"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready to do some cardio for a cause!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-le-s1h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
