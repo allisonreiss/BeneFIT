@@ -24,7 +24,11 @@ class LoginViewController: UIViewController {
         gradient = CAGradientLayer()
         gradient.frame = self.view.bounds
         gradient.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+        gradient.zPosition = -1
+        usernameField.layer.zPosition = 2
+        passwordField.layer.zPosition = 2
         self.view.layer.addSublayer(gradient)
+        
     }
     
     @IBAction func onSignIn(_ sender: Any) {

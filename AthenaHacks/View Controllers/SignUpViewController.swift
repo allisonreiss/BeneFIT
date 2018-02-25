@@ -11,7 +11,6 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
-    var handle: AuthStateDidChangeListenerHandle?
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var confirmPassTextField: UITextField!
@@ -20,14 +19,14 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
     @IBAction func onSignUpPress(_ sender: Any) {
         Auth.auth().createUser(withEmail: usernameTextField.text!, password: passTextField.text!) { (user, error) in
             if(error != nil) {
-                print(error)
+                print(error?.localizedDescription)
             } else {
                 print("Yay sign up worked!")
             }
@@ -37,6 +36,15 @@ class SignUpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
     }
 
 
