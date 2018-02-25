@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-/*class RunDetailsViewController: UIViewController {
+class RunDetailsViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var distanceLabel: UILabel!
@@ -182,4 +182,4 @@ extension RunDetailsViewController: MKMapViewDelegate {
         renderer.lineWidth = 3
         return renderer
     }
-}*/
+}

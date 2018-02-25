@@ -23,10 +23,10 @@ class LoginViewController: UIViewController {
         // Set up the background gradient
         gradient = CAGradientLayer()
         gradient.frame = self.view.bounds
-        gradient.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+        let colorTop = UIColor(red: 166.0 / 255.0, green: 237.0 / 255.0, blue: 233.0 / 255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 69.0 / 255.0, green: 247.0 / 255.0, blue: 146.0 / 255.0, alpha: 1.0).cgColor
+        gradient.colors = [colorTop, colorBottom]
         gradient.zPosition = -1
-        usernameField.layer.zPosition = 2
-        passwordField.layer.zPosition = 2
         self.view.layer.addSublayer(gradient)
         
     }
