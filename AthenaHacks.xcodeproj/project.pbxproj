@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267776692042580F00236CB2 /* CharityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267776682042580F00236CB2 /* CharityClient.swift */; };
 		279F75833AE2C8C51DA1EE71 /* Pods_AthenaHacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */; };
 		C910A2CD91C936DA60E60377 /* Pods_AthenaHacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */; };
 		E705EE586B9C424E3255BD9A /* Pods_AthenaHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7377ED41456424733333FDF2 /* Pods_AthenaHacks.framework */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		03874A03D91C616C3DC9C3B9 /* Pods-AthenaHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacks.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks.release.xcconfig"; sourceTree = "<group>"; };
 		0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthenaHacksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		267776682042580F00236CB2 /* CharityClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityClient.swift; sourceTree = "<group>"; };
 		37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthenaHacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B724AC09B15B69166BAB0 /* Pods-AthenaHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		729BFAE163874F0F03A164B3 /* Pods-AthenaHacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		267776652042502900236CB2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				267776682042580F00236CB2 /* CharityClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		890C506BA8206AA4131F8A1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		FB995AC72042281400F6CD31 /* AthenaHacks */ = {
 			isa = PBXGroup;
 			children = (
+				267776652042502900236CB2 /* API */,
 				FB995AF62042343400F6CD31 /* View Controllers */,
 				FB995AC82042281500F6CD31 /* AppDelegate.swift */,
 				FB995ACA2042281500F6CD31 /* ViewController.swift */,
@@ -357,6 +368,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BDBOAuth1Manager/BDBOAuth1Manager.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
 				"${BUILT_PRODUCTS_DIR}/HyperTrack/HyperTrack.framework",
@@ -366,6 +378,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDBOAuth1Manager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyperTrack.framework",
@@ -501,6 +514,7 @@
 				FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */,
 				FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */,
 				FB995B022042392E00F6CD31 /* RunViewController.swift in Sources */,
+				267776692042580F00236CB2 /* CharityClient.swift in Sources */,
 				FB995AFC2042355D00F6CD31 /* StartRunViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

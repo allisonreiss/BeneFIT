@@ -1,20 +1,22 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (3.0.0):
+    - AFNetworking/NSURLSession (= 3.0.0)
+    - AFNetworking/Reachability (= 3.0.0)
+    - AFNetworking/Security (= 3.0.0)
+    - AFNetworking/Serialization (= 3.0.0)
+    - AFNetworking/UIKit (= 3.0.0)
+  - AFNetworking/NSURLSession (3.0.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/Reachability (3.0.0)
+  - AFNetworking/Security (3.0.0)
+  - AFNetworking/Serialization (3.0.0)
+  - AFNetworking/UIKit (3.0.0):
     - AFNetworking/NSURLSession
   - Alamofire (4.5.1)
+  - BDBOAuth1Manager (2.0.0):
+    - AFNetworking/NSURLSession (~> 3.0.0)
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Swift (3.3.0):
     - CocoaLumberjack/Default
@@ -30,16 +32,18 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BDBOAuth1Manager (= 2.0.0)
   - HyperTrack
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HyperTrack: 2cc1ebee16af6630a5f787f075c16080295fa4ff
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 426e3347774f63cd1fdbca5a99aed7311448c056
+PODFILE CHECKSUM: f93156c818541738bbe6fd6e13224256571bad5a
 
 COCOAPODS: 1.4.0
