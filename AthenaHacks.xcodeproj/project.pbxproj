@@ -16,6 +16,8 @@
 		FB92902D2042B61300E2F0C5 /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB92902A2042B61200E2F0C5 /* MoonRunner.xcdatamodeld */; };
 		FB92902F2042B9EE00E2F0C5 /* RunDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB92902E2042B9EE00E2F0C5 /* RunDetailsViewController.swift */; };
 		FB9290312042BD6E00E2F0C5 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9290302042BD6E00E2F0C5 /* UnitExtensions.swift */; };
+		FB9290332042BE0300E2F0C5 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9290322042BE0300E2F0C5 /* FormatDisplay.swift */; };
+		FB9290352042BE3300E2F0C5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9290342042BE3300E2F0C5 /* LocationManager.swift */; };
 		FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AC82042281500F6CD31 /* AppDelegate.swift */; };
 		FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995ACA2042281500F6CD31 /* ViewController.swift */; };
 		FB995ACE2042281500F6CD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB995ACC2042281500F6CD31 /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 		FB92902B2042B61200E2F0C5 /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
 		FB92902E2042B9EE00E2F0C5 /* RunDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDetailsViewController.swift; sourceTree = "<group>"; };
 		FB9290302042BD6E00E2F0C5 /* UnitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
+		FB9290322042BE0300E2F0C5 /* FormatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
+		FB9290342042BE3300E2F0C5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FB995AC52042281400F6CD31 /* AthenaHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AthenaHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB995AC82042281500F6CD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB995ACA2042281500F6CD31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				FB995AD12042281500F6CD31 /* LaunchScreen.storyboard */,
 				FB995AD42042281500F6CD31 /* Info.plist */,
 				FB9290302042BD6E00E2F0C5 /* UnitExtensions.swift */,
+				FB9290322042BE0300E2F0C5 /* FormatDisplay.swift */,
+				FB9290342042BE3300E2F0C5 /* LocationManager.swift */,
 			);
 			path = AthenaHacks;
 			sourceTree = "<group>";
@@ -524,6 +530,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB995AF82042346000F6CD31 /* LoginViewController.swift in Sources */,
+				FB9290332042BE0300E2F0C5 /* FormatDisplay.swift in Sources */,
+				FB9290352042BE3300E2F0C5 /* LocationManager.swift in Sources */,
 				FB92902D2042B61300E2F0C5 /* MoonRunner.xcdatamodeld in Sources */,
 				FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */,
 				FB92902F2042B9EE00E2F0C5 /* RunDetailsViewController.swift in Sources */,
