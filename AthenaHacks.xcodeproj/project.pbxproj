@@ -17,6 +17,12 @@
 		FB995AD32042281500F6CD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB995AD12042281500F6CD31 /* LaunchScreen.storyboard */; };
 		FB995ADE2042281600F6CD31 /* AthenaHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995ADD2042281600F6CD31 /* AthenaHacksTests.swift */; };
 		FB995AE92042281600F6CD31 /* AthenaHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AE82042281600F6CD31 /* AthenaHacksUITests.swift */; };
+		FB995AF82042346000F6CD31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AF72042346000F6CD31 /* LoginViewController.swift */; };
+		FB995AFA2042354D00F6CD31 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AF92042354D00F6CD31 /* ProfileViewController.swift */; };
+		FB995AFC2042355D00F6CD31 /* StartRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFB2042355D00F6CD31 /* StartRunViewController.swift */; };
+		FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFD204238E200F6CD31 /* CharityViewController.swift */; };
+		FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFF204238F700F6CD31 /* CameraViewController.swift */; };
+		FB995B022042392E00F6CD31 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995B012042392E00F6CD31 /* RunViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		FB995AE42042281600F6CD31 /* AthenaHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AthenaHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB995AE82042281600F6CD31 /* AthenaHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenaHacksUITests.swift; sourceTree = "<group>"; };
 		FB995AEA2042281600F6CD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB995AF72042346000F6CD31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB995AF92042354D00F6CD31 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FB995AFB2042355D00F6CD31 /* StartRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRunViewController.swift; sourceTree = "<group>"; };
+		FB995AFD204238E200F6CD31 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
+		FB995AFF204238F700F6CD31 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FB995B012042392E00F6CD31 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +149,7 @@
 		FB995AC72042281400F6CD31 /* AthenaHacks */ = {
 			isa = PBXGroup;
 			children = (
+				FB995AF62042343400F6CD31 /* View Controllers */,
 				FB995AC82042281500F6CD31 /* AppDelegate.swift */,
 				FB995ACA2042281500F6CD31 /* ViewController.swift */,
 				FB995ACC2042281500F6CD31 /* Main.storyboard */,
@@ -163,6 +176,19 @@
 				FB995AEA2042281600F6CD31 /* Info.plist */,
 			);
 			path = AthenaHacksUITests;
+			sourceTree = "<group>";
+		};
+		FB995AF62042343400F6CD31 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB995AF72042346000F6CD31 /* LoginViewController.swift */,
+				FB995AF92042354D00F6CD31 /* ProfileViewController.swift */,
+				FB995AFB2042355D00F6CD31 /* StartRunViewController.swift */,
+				FB995AFD204238E200F6CD31 /* CharityViewController.swift */,
+				FB995AFF204238F700F6CD31 /* CameraViewController.swift */,
+				FB995B012042392E00F6CD31 /* RunViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,8 +494,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB995AF82042346000F6CD31 /* LoginViewController.swift in Sources */,
 				FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */,
+				FB995AFA2042354D00F6CD31 /* ProfileViewController.swift in Sources */,
+				FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */,
+				FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */,
 				FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */,
+				FB995B022042392E00F6CD31 /* RunViewController.swift in Sources */,
+				FB995AFC2042355D00F6CD31 /* StartRunViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
