@@ -9,7 +9,8 @@
 import UIKit
 
 class CharityCheetahViewController: UIViewController {
-
+    @IBOutlet weak var chooseButton: UIButton!
+    
     var gradient : CAGradientLayer!
     
     override func viewDidLoad() {
@@ -23,8 +24,6 @@ class CharityCheetahViewController: UIViewController {
         gradient.colors = [colorTop, colorBottom]
         gradient.zPosition = -1
         self.view.layer.addSublayer(gradient)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

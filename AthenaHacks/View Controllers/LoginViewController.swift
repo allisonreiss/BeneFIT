@@ -60,7 +60,7 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let destination = 
+
     }
     
     override func didReceiveMemoryWarning() {
