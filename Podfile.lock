@@ -14,32 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.0.0)
   - AFNetworking/UIKit (3.0.0):
     - AFNetworking/NSURLSession
-  - Alamofire (4.5.1)
-  - CocoaLumberjack/Default (3.3.0)
-  - CocoaLumberjack/Swift (3.3.0):
-    - CocoaLumberjack/Default
-  - GzipSwift (4.0.4)
-  - HyperTrack (0.4.68):
-    - Alamofire (>= 4.4.0)
-    - CocoaLumberjack/Swift
-    - GzipSwift
-    - SQLite.swift (= 0.11.2)
-  - SQLite.swift (0.11.2):
-    - SQLite.swift/standard (= 0.11.2)
-  - SQLite.swift/standard (0.11.2)
+  - ARCL (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - HyperTrack
+  - ARCL
 
 SPEC CHECKSUMS:
   AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
-  HyperTrack: 2cc1ebee16af6630a5f787f075c16080295fa4ff
-  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+  ARCL: 193b108d6fd5277ce742be3af92ccf81bbdd2f3b
 
-PODFILE CHECKSUM: 426e3347774f63cd1fdbca5a99aed7311448c056
+PODFILE CHECKSUM: 1f187020a60aaeaf60f716a58325f20ffd1e012d
 
 COCOAPODS: 1.4.0
