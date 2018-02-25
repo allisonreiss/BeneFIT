@@ -15,6 +15,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var confirmPassTextField: UITextField!
     
+    var user: AnyObject?
+    
     var handle: AuthStateDidChangeListenerHandle?
 
     override func viewDidLoad() {
@@ -28,9 +30,17 @@ class SignUpViewController: UIViewController {
             if(error != nil) {
                 print(error?.localizedDescription)
             } else {
+                self.user = user
+                self.performSegue(withIdentifier: "toCategorySegue", sender: self)
                 print("Yay sign up worked!")
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! CharityViewController
+        destination.user = self.user
+        
     }
     
     override func didReceiveMemoryWarning() {
