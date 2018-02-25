@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
     var gradient : CAGradientLayer!
     
     override func viewDidLoad() {
@@ -28,6 +31,11 @@ class LoginViewController: UIViewController {
         gradient.colors = [colorTop, colorBottom]
         gradient.zPosition = -1
         self.view.layer.addSublayer(gradient)
+        
+        signUpButton.layer.cornerRadius = 15
+        signUpButton.clipsToBounds = true
+        signInButton.layer.cornerRadius = 15
+        signInButton.clipsToBounds = true
         
     }
     
@@ -52,6 +60,7 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
     }
     
     override func didReceiveMemoryWarning() {
