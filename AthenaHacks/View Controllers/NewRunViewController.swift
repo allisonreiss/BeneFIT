@@ -27,6 +27,7 @@ class NewRunViewController: UIViewController {
     private var timer: Timer?
     private var distance = Measurement(value: 0, unit: UnitLength.meters)
     private var locationList: [CLLocation] = []
+    var gradient : CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,12 @@ class NewRunViewController: UIViewController {
         stopButton.layer.cornerRadius = 30
         stopButton.clipsToBounds = true
         stopButton.layer.zPosition = 1
+        
+        // Set up the background gradient
+        gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        gradient.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+        self.view.layer.addSublayer(gradient)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
