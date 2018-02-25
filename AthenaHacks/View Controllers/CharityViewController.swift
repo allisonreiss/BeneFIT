@@ -9,7 +9,7 @@
 import UIKit
 
 class CharityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var categories: NSArray?
@@ -56,6 +56,10 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell
         
+    }
+    
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
