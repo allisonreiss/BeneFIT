@@ -14,9 +14,19 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var categories: NSArray?
     var categorySelected: String?
+    var gradient: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set up the background gradient
+        gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        let colorTop = UIColor(red: 166.0 / 255.0, green: 237.0 / 255.0, blue: 233.0 / 255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 69.0 / 255.0, green: 247.0 / 255.0, blue: 146.0 / 255.0, alpha: 1.0).cgColor
+        gradient.colors = [colorTop, colorBottom]
+        gradient.zPosition = -1
+        self.view.layer.addSublayer(gradient)
         
         tableView.dataSource = self
         tableView.delegate = self
