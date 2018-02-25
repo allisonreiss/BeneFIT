@@ -189,7 +189,7 @@
             <objects>
                 <viewController storyboardIdentifier="CharityViewController" id="uO4-F9-7hI" customClass="CharityViewController" customModule="AthenaHacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1u3-40-rmD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CJP-ZT-HgI">
@@ -273,6 +273,10 @@
                                 <state key="normal" title="Change Charity">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onChangeCharity:" destination="GJn-bN-Kwk" eventType="touchUpInside" id="KYn-OL-t3u"/>
+                                    <segue destination="uO4-F9-7hI" kind="show" identifier="chooseNewCharity" id="mkh-ZT-ZVW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Chosen Charity is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyO-cv-xGL">
                                 <rect key="frame" x="67" y="270" width="240" height="21"/>
@@ -349,10 +353,10 @@
             </objects>
             <point key="canvasLocation" x="1757.5999999999999" y="69.715142428785612"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="Sqh-jn-Bn1">
             <objects>
-                <tabBarController id="80J-qx-uUP" sceneMemberID="viewController">
+                <tabBarController id="80J-qx-uUP" customClass="CustomTabBarController" customModule="AthenaHacks" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sQf-mr-P3x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -778,5 +782,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C24-2o-S52"/>
+        <segue reference="mkh-ZT-ZVW"/>
     </inferredMetricsTieBreakers>
 </document>
