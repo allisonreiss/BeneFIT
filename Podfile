@@ -8,6 +8,9 @@ target 'AthenaHacks' do
   # Pods for AthenaHacks
 #  pod 'HyperTrack'
   pod 'AFNetworking', '~> 3.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'FirebaseUI'
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|

@@ -7,29 +7,55 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuthUI
 
 class LoginViewController: UIViewController {
+    
+    var handle: AuthStateDidChangeListenerHandle?
 
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       
     }
-
+    
+    
+    @IBAction func onSignIn(_ sender: Any) {
+        Auth.auth().signIn(withEmail: username.text!, password: password.text!) { (user, error) in
+            if let user = user {
+                let uid = user.uid
+                let email = user.email
+                print(uid)
+            }
+            if(user != nil) {
+                print("yay create user worked")
+                
+            } else {
+                print("rip")
+            }
+            if let error = error {
+                print(error)
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // ...
+        }
     }
-    */
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
+
+   
 
 }
