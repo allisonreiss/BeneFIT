@@ -7,35 +7,27 @@
 //
 
 import UIKit
-import HyperTrack
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    var gradient : CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Set up the background gradient
+        gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        gradient.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+        self.view.layer.addSublayer(gradient)
     }
     
     @IBAction func onSignIn(_ sender: Any) {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        HyperTrack.createUser(usernameField.text!) { (user, error) in
-            if (error != nil) {
-                // Handle error on get or create user
-                print("recieved error while creating user. error : " + (error?.errorMessage)!)
-                return
-            }
-            
-            if (user != nil) {
-                // User successfully created
-                print("User created:", user!.id ?? "")
-            }
-        }
     }
     
     override func didReceiveMemoryWarning() {
