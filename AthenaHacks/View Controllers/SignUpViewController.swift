@@ -45,16 +45,16 @@ class SignUpViewController: UIViewController {
                 print(user!.uid)
                 self.userUID = user!.uid
                 print("Yay sign up worked!")
-                self.performSegue(withIdentifier: "toCategorySegue", sender: self)
+                self.performSegue(withIdentifier: "toCharityCheetah", sender: self)
             }
         }
     }
-    
+  /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! CharityViewController
   //      destination.userUID = self.userUID
         
-    }
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

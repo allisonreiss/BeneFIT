@@ -12,6 +12,7 @@ import Firebase
 class ListOfCharitesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var ref: DatabaseReference!
+    var gradient: CAGradientLayer!
     
     @IBOutlet weak var tableView: UITableView!
     var categorySelected: String?
@@ -31,6 +32,15 @@ class ListOfCharitesVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Set up the background gradient
+        gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        let colorTop = UIColor(red: 166.0 / 255.0, green: 237.0 / 255.0, blue: 233.0 / 255.0, alpha: 1.0).cgColor
+        let colorBottom = UIColor(red: 69.0 / 255.0, green: 247.0 / 255.0, blue: 146.0 / 255.0, alpha: 1.0).cgColor
+        gradient.colors = [colorTop, colorBottom]
+        gradient.zPosition = -1
+        self.view.layer.addSublayer(gradient)
         
         
         if let categorySelected = categorySelected {

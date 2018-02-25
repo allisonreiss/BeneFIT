@@ -16,6 +16,9 @@ class CharityCheetahViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        chooseButton.layer.cornerRadius = 15
+        chooseButton.clipsToBounds = true
+        
         // Set up the background gradient
         gradient = CAGradientLayer()
         gradient.frame = self.view.bounds
@@ -25,7 +28,10 @@ class CharityCheetahViewController: UIViewController {
         gradient.zPosition = -1
         self.view.layer.addSublayer(gradient)
     }
-
+    @IBAction func onTap(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCategoriesSegue", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
