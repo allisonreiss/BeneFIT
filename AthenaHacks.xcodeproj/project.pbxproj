@@ -37,6 +37,7 @@
 		FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFD204238E200F6CD31 /* CharityViewController.swift */; };
 		FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFF204238F700F6CD31 /* CameraViewController.swift */; };
 		FB995B022042392E00F6CD31 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995B012042392E00F6CD31 /* RunViewController.swift */; };
+		FBC2E7332043242600A3E86C /* CharityCheetahViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2E7322043242600A3E86C /* CharityCheetahViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		FB995AFD204238E200F6CD31 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
 		FB995AFF204238F700F6CD31 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FB995B012042392E00F6CD31 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		FBC2E7322043242600A3E86C /* CharityCheetahViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityCheetahViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,8 @@
 				FB9290262042B22C00E2F0C5 /* NewRunViewController.swift */,
 				FB92902E2042B9EE00E2F0C5 /* RunDetailsViewController.swift */,
 				267776742042D40800236CB2 /* SignUpViewController.swift */,
+
+				FBC2E7322043242600A3E86C /* CharityCheetahViewController.swift */,
 				2677767E2042F82700236CB2 /* ListOfCharitesVC.swift */,
 				267776802042F83C00236CB2 /* CharityDetailsViewController.swift */,
 			);
@@ -618,11 +622,13 @@
 				2677767F2042F82700236CB2 /* ListOfCharitesVC.swift in Sources */,
 				267776752042D40800236CB2 /* SignUpViewController.swift in Sources */,
 				FB92902F2042B9EE00E2F0C5 /* RunDetailsViewController.swift in Sources */,
+				FBC2E7332043242600A3E86C /* CharityCheetahViewController.swift in Sources */,
 				FB995AFA2042354D00F6CD31 /* ProfileViewController.swift in Sources */,
 				FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */,
 				FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */,
 				FB9290372042C4DF00E2F0C5 /* MulticolorPolyline.swift in Sources */,
 				2677767B2042E5AD00236CB2 /* CharityCategoryCell.swift in Sources */,
+
 				26777683204302BC00236CB2 /* CharityCell.swift in Sources */,
 				FB9290312042BD6E00E2F0C5 /* UnitExtensions.swift in Sources */,
 				FB92903B2042F05100E2F0C5 /* CoreDataStack.swift in Sources */,
