@@ -12,7 +12,7 @@ import MapKit
 
 class NewRunViewController: UIViewController {
 
-    /*@IBOutlet weak var labelView: UIView!
+    @IBOutlet weak var labelView: UIView!
     @IBOutlet weak var dataView: UIView!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -178,11 +178,11 @@ extension NewRunViewController: CLLocationManagerDelegate {
             
             locationList.append(newLocation)
         }
-    }*/
+    }
 }
 
 
-/*extension NewRunViewController: MKMapViewDelegate {
+extension NewRunViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         guard let polyline = overlay as? MKPolyline else {
             return MKOverlayRenderer(overlay: overlay)
@@ -192,5 +192,5 @@ extension NewRunViewController: CLLocationManagerDelegate {
         renderer.lineWidth = 10
         return renderer
     }
-}*/
+}
 

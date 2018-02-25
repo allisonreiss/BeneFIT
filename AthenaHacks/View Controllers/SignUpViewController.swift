@@ -52,7 +52,7 @@ class SignUpViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! CharityViewController
-        destination.userUID = self.userUID
+  //      destination.userUID = self.userUID
         
     }
     
