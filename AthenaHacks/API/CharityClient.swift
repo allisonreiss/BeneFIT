@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import BDBOAuth1Manager
 
-class CharityClient: BDBOAuth1SessionManager {
+class CharityClient {
     
     func getCategories() {
         let apikey = "6036d915f121c7d50b8f3d7bcc93796f"

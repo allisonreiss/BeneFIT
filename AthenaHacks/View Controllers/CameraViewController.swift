@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import ARCL
+import CoreLocation
 
 class CameraViewController: UIViewController {
 
+    var sceneLocationView = SceneLocationView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+/*
+        sceneLocationView.run()
+        view.addSubview(sceneLocationView)
+        
+        let coordinate = CLLocationCoordinate2D(latitude: 51.504571, longitude: -0.019717)
+        let location = CLLocation(coordinate: coordinate, altitude: 300)
+        let image = UIImage(named: "pin")!
+        
+        let annotationNode = LocationAnnotationNode(location: location, image: image)
+        
+        sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: annotationNode)
+ */
+ }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

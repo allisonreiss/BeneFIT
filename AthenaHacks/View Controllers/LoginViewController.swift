@@ -10,12 +10,26 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    var gradient : CAGradientLayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Set up the background gradient
+        gradient = CAGradientLayer()
+        gradient.frame = self.view.bounds
+        gradient.colors = [UIColor.purple.cgColor, UIColor.blue.cgColor]
+        self.view.layer.addSublayer(gradient)
     }
-
+    
+    @IBAction func onSignIn(_ sender: Any) {
+    }
+    
+    @IBAction func onSignUp(_ sender: Any) {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
