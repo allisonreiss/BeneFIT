@@ -10,9 +10,21 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var charityLabel: UILabel!
+    @IBOutlet weak var changeCharityButton: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var milesTilDonateLabel: UILabel!
+    @IBOutlet weak var donateNowButton: UIButton!
+    @IBOutlet weak var totalMilesLabel: UILabel!
+    @IBOutlet weak var totalMoneyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        profileImageView.layer.cornerRadius = 30
+        profileImageView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 
