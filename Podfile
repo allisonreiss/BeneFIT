@@ -8,7 +8,6 @@ target 'AthenaHacks' do
   # Pods for AthenaHacks
 #  pod 'HyperTrack'
   pod 'AFNetworking', '~> 3.0'
-  pod 'ARCL'
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|

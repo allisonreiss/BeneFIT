@@ -14,16 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.0.0)
   - AFNetworking/UIKit (3.0.0):
     - AFNetworking/NSURLSession
-  - ARCL (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - ARCL
 
 SPEC CHECKSUMS:
   AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
-  ARCL: 193b108d6fd5277ce742be3af92ccf81bbdd2f3b
 
-PODFILE CHECKSUM: 1f187020a60aaeaf60f716a58325f20ffd1e012d
+PODFILE CHECKSUM: 7abbc7525f824711582aa4314fc765ac8550439a
 
 COCOAPODS: 1.4.0
