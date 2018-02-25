@@ -207,13 +207,6 @@ class AppleMapsProvider: NSObject, MapProviderProtocol, UIGestureRecognizerDeleg
     }
     
     
-    func addPolyline(coordinates: [CLLocationCoordinate2D],identifier:String){
-        let polylineOverlay = MKPolyline(coordinates: coordinates, count: coordinates.count)
-        polylineOverlay.title  = identifier
-        self.mapView.add(polylineOverlay)
-        polylines[identifier] = polylineOverlay
-    }
-    
     func removePolylineWithIdentifier(identifier: String) {
         if let polyline = polylines[identifier]{
             self.mapView.remove(polyline)

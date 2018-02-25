@@ -763,7 +763,7 @@ class HTLiveLocationView: HTCommonView {
         focusMarkers()
     }
     
-    override func setUpHeroMarker(userId: String, coordinates: [CLLocationCoordinate2D],disableHeroMarkerRotation:Bool,polylineCordinates:[CLLocationCoordinate2D]) {
+    override func setUpHeroMarker(userId: String, coordinates: [CLLocationCoordinate2D],disableHeroMarkerRotation:Bool) {
         
         if(currentViewState == LiveLocationViewState.TRACKING_STARTED){
             let user = HTConsumerClient.sharedInstance.getUser(userId: userId)

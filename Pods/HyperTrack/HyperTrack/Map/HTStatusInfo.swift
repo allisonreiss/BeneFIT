@@ -12,92 +12,86 @@ import UIKit
     /**
     Username of user to whom the action is assigned
      */
-    public var userName: String = ""
+    var userName: String = ""
     
     /**
     Date at which action was updated
      */
-    public var lastUpdated: Date = Date()
+    var lastUpdated: Date = Date()
     
     /**
     Speed of the user to whom the action is assigned
     */
-    public var speed: Int?
+    var speed: Int?
     
     /**
     Battery of user
     */
-    public var battery: Int?
+    var battery: Int?
     
     /**
     Url of the user's photo
     */
-   public var photoUrl: URL?
+    var photoUrl: URL?
     
     /**
     eta of user for completing the action
     */
-    public var etaMinutes: Double? = nil
+    var etaMinutes: Double? = nil
     
     /**
     distance unit used while giving distance info
      */
-    public var distanceUnit = "mi"
+    var distanceUnit = "mi"
     
     /**
     distance left for completing the action, it is given in the distance unit which is decided based on user's location
     */
-    public var distanceLeft: Double?
+    var distanceLeft: Double? = nil
     
     /**
      distance covered while completing the action, it is given in the distance unit which is decided based on user's location
      */
-    public var distanceCovered: Double = 0.0
+    var distanceCovered: Double = 0
     
     /**
      Human readable status for the action
     */
-    public var status: String = ""
+    var status: String = ""
     
     /**
     time elapsed while completing the action
     */
-    public var timeElapsedMinutes: Double = 0
+    var timeElapsedMinutes: Double = 0
     
     /**
     address where the action is started
     */
-    public var startAddress: String?
+    var startAddress: String?
     
     /**
      address where the action is completed
      */
-    public var completeAddress: String?
+    var completeAddress: String?
     
     /**
      time when the action is started
      */
-    public var startTime: Date?
+    var startTime: Date?
 
     /**
      time when the action is ended
      */
-    public var endTime: Date?
+    var endTime: Date?
     
     /**
      display fields of action
      */
-    public var display: HyperTrackActionDisplay?
+    var display: HyperTrackActionDisplay?
     
     /**
      specifies wether you can show details of action 
     */
-    public var showActionDetailSummary = false
-    
-    public func getDistanceLeft() -> NSNumber?{
-        if let distanceLeft = self.distanceLeft{
-            return NSNumber(value: distanceLeft)
-        }
-        return nil
-    }
+    var showActionDetailSummary = false
+
 }

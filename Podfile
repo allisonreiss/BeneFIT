@@ -9,6 +9,7 @@ target 'AthenaHacks' do
 #  pod 'HyperTrack'
   pod 'AFNetworking', '~> 3.0'
   pod 'HyperTrack'
+  pod 'HDAugmentedReality', '~> 2.3'
 
     post_install do |installer|
         installer.pods_project.targets.each do |target|

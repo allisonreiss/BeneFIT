@@ -18,8 +18,9 @@ PODS:
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Swift (3.3.0):
     - CocoaLumberjack/Default
-  - GzipSwift (4.0.4)
-  - HyperTrack (0.4.68):
+  - GzipSwift (4.0.3)
+  - HDAugmentedReality (2.3.0)
+  - HyperTrack (0.4.66):
     - Alamofire (>= 4.4.0)
     - CocoaLumberjack/Swift
     - GzipSwift
@@ -30,16 +31,18 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - HDAugmentedReality (~> 2.3)
   - HyperTrack
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
-  GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
-  HyperTrack: 2cc1ebee16af6630a5f787f075c16080295fa4ff
+  GzipSwift: 04f1f401048d06fe40a2f50077c571a1977e6984
+  HDAugmentedReality: 2ea96cb488aa81298e6557a897b4252d62e55843
+  HyperTrack: 0a10b7fcc0c3d1f88a87043693a0716f6352955c
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 426e3347774f63cd1fdbca5a99aed7311448c056
+PODFILE CHECKSUM: de3ab05934b7d6bafb0e644355a2d5e940e138d8
 
 COCOAPODS: 1.4.0

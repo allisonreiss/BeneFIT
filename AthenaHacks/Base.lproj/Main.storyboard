@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G6V-Db-bEv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDL-Xr-j1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="859"/>
+            <point key="canvasLocation" x="1078" y="859"/>
         </scene>
         <!--Run View Controller-->
         <scene sceneID="FHf-YP-nES">
@@ -278,6 +278,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="445"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eip-Q8-eRz">
+                                <rect key="frame" x="142" y="628" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Camera View"/>
+                                <connections>
+                                    <action selector="showARController:" destination="knx-td-Crj" eventType="touchUpInside" id="fGs-Wu-i1P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6x9-Yu-xIF"/>
@@ -289,25 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2AO-fU-ndt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.79999999999995" y="858.62068965517244"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="fPd-YV-ljv">
-            <objects>
-                <tabBarController id="G6V-Db-bEv" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulx-Qh-YWI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="ute-Qw-O7H" kind="relationship" relationship="viewControllers" id="adc-Lu-N1Y"/>
-                        <segue destination="GhA-hG-all" kind="relationship" relationship="viewControllers" id="EGg-Ei-ee0"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wck-oo-lQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="23" y="859"/>
+            <point key="canvasLocation" x="215" y="859"/>
         </scene>
         <!--Profile-->
         <scene sceneID="k0u-DD-hKw">
@@ -345,7 +335,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahz-MR-LbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-857" y="1657"/>
+            <point key="canvasLocation" x="-543" y="859"/>
         </scene>
         <!--Camera-->
         <scene sceneID="sis-Zz-Gnb">
@@ -364,7 +354,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rJ-gf-K0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="1657"/>
+            <point key="canvasLocation" x="214" y="1603"/>
         </scene>
     </scenes>
 </document>

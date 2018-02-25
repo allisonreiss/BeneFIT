@@ -12,7 +12,7 @@ import CocoaLumberjack
 /**
  Instances of HyperTrackActionDisplay represent display fields of an action: https://docs.hypertrack.com/api/entities/action.html
  */
-@objc public class HyperTrackActionDisplay: NSObject {
+@objc public class HyperTrackActionDisplay:NSObject {
     
     /**
      Human readable status for the action
@@ -115,19 +115,5 @@ import CocoaLumberjack
             DDLogError("Error in getting action display from json: " + error.localizedDescription)
             return nil
         }
-    }
-    
-    public func getDistanceRemaining() -> NSNumber? {
-        if let remaining = self.distanceRemaining{
-           return NSNumber(value:remaining)
-        }
-        return nil
-    }
-    
-    public func getDurationRemaining() -> NSNumber?{
-        if let remaining = self.durationRemaining{
-            return NSNumber(value:remaining)
-        }
-        return nil
     }
 }

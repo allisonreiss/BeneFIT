@@ -10,6 +10,17 @@
 		279F75833AE2C8C51DA1EE71 /* Pods_AthenaHacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */; };
 		C910A2CD91C936DA60E60377 /* Pods_AthenaHacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */; };
 		E705EE586B9C424E3255BD9A /* Pods_AthenaHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7377ED41456424733333FDF2 /* Pods_AthenaHacks.framework */; };
+		FB72D2B420428530008F9A34 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2AF2042852F008F9A34 /* ARViewController.swift */; };
+		FB72D2B520428530008F9A34 /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2B020428530008F9A34 /* ARAnnotationView.swift */; };
+		FB72D2B620428530008F9A34 /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2B120428530008F9A34 /* ARConfiguration.swift */; };
+		FB72D2B720428530008F9A34 /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2B220428530008F9A34 /* ARTrackingManager.swift */; };
+		FB72D2B820428530008F9A34 /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2B320428530008F9A34 /* ARAnnotation.swift */; };
+		FB72D2BB20428542008F9A34 /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2BA20428542008F9A34 /* DebugMapViewController.swift */; };
+		FB72D2C020428556008F9A34 /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = FB72D2BC20428555008F9A34 /* hdar_close.png */; };
+		FB72D2C120428556008F9A34 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB72D2BD20428556008F9A34 /* hdar_close@3x.png */; };
+		FB72D2C220428556008F9A34 /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB72D2BE20428556008F9A34 /* DebugMapViewController.xib */; };
+		FB72D2C320428556008F9A34 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB72D2BF20428556008F9A34 /* hdar_close@2x.png */; };
+		FB72D2C520428657008F9A34 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72D2C420428657008F9A34 /* Place.swift */; };
 		FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AC82042281500F6CD31 /* AppDelegate.swift */; };
 		FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995ACA2042281500F6CD31 /* ViewController.swift */; };
 		FB995ACE2042281500F6CD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB995ACC2042281500F6CD31 /* Main.storyboard */; };
@@ -23,6 +34,7 @@
 		FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFD204238E200F6CD31 /* CharityViewController.swift */; };
 		FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995AFF204238F700F6CD31 /* CameraViewController.swift */; };
 		FB995B022042392E00F6CD31 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995B012042392E00F6CD31 /* RunViewController.swift */; };
+		FB995B0620427E6300F6CD31 /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB995B0520427E6300F6CD31 /* PlacesLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +64,17 @@
 		7CABCA4F0A3C60CAC306C0B3 /* Pods-AthenaHacksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksUITests/Pods-AthenaHacksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		84CD5FF2DAA0386BEDA1F92A /* Pods-AthenaHacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests.release.xcconfig"; sourceTree = "<group>"; };
 		952E7717FA4AAC19F7D5FF8E /* Pods-AthenaHacksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksUITests/Pods-AthenaHacksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB72D2AF2042852F008F9A34 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARViewController.swift; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Classes/ARViewController.swift"; sourceTree = "<group>"; };
+		FB72D2B020428530008F9A34 /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARAnnotationView.swift; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Classes/ARAnnotationView.swift"; sourceTree = "<group>"; };
+		FB72D2B120428530008F9A34 /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARConfiguration.swift; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Classes/ARConfiguration.swift"; sourceTree = "<group>"; };
+		FB72D2B220428530008F9A34 /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTrackingManager.swift; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Classes/ARTrackingManager.swift"; sourceTree = "<group>"; };
+		FB72D2B320428530008F9A34 /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARAnnotation.swift; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Classes/ARAnnotation.swift"; sourceTree = "<group>"; };
+		FB72D2BA20428542008F9A34 /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DebugMapViewController.swift; path = "../../../../../../Desktop/Places  2/Places/HDAugmentedReality/Classes/Debug/DebugMapViewController.swift"; sourceTree = "<group>"; };
+		FB72D2BC20428555008F9A34 /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hdar_close.png; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Resources/hdar_close.png"; sourceTree = "<group>"; };
+		FB72D2BD20428556008F9A34 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hdar_close@3x.png"; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Resources/hdar_close@3x.png"; sourceTree = "<group>"; };
+		FB72D2BE20428556008F9A34 /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DebugMapViewController.xib; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Resources/DebugMapViewController.xib"; sourceTree = "<group>"; };
+		FB72D2BF20428556008F9A34 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hdar_close@2x.png"; path = "../../../../../Desktop/Places  2/Places/HDAugmentedReality/Resources/hdar_close@2x.png"; sourceTree = "<group>"; };
+		FB72D2C420428657008F9A34 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = "../../../Desktop/Places  2/Places/Place.swift"; sourceTree = "<group>"; };
 		FB995AC52042281400F6CD31 /* AthenaHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AthenaHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB995AC82042281500F6CD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB995ACA2042281500F6CD31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +94,7 @@
 		FB995AFD204238E200F6CD31 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
 		FB995AFF204238F700F6CD31 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FB995B012042392E00F6CD31 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		FB995B0520427E6300F6CD31 /* PlacesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +148,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB72D2AC204284D2008F9A34 /* HDAugmentedReality */ = {
+			isa = PBXGroup;
+			children = (
+				FB72D2AD20428509008F9A34 /* Classes */,
+				FB72D2AE2042850E008F9A34 /* Resources */,
+			);
+			path = HDAugmentedReality;
+			sourceTree = "<group>";
+		};
+		FB72D2AD20428509008F9A34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB72D2B320428530008F9A34 /* ARAnnotation.swift */,
+				FB72D2B020428530008F9A34 /* ARAnnotationView.swift */,
+				FB72D2B120428530008F9A34 /* ARConfiguration.swift */,
+				FB72D2B220428530008F9A34 /* ARTrackingManager.swift */,
+				FB72D2AF2042852F008F9A34 /* ARViewController.swift */,
+				FB72D2B920428538008F9A34 /* Debug */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB72D2AE2042850E008F9A34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB72D2BE20428556008F9A34 /* DebugMapViewController.xib */,
+				FB72D2BC20428555008F9A34 /* hdar_close.png */,
+				FB72D2BF20428556008F9A34 /* hdar_close@2x.png */,
+				FB72D2BD20428556008F9A34 /* hdar_close@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB72D2B920428538008F9A34 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				FB72D2BA20428542008F9A34 /* DebugMapViewController.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		FB995ABC2042281400F6CD31 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +214,7 @@
 		FB995AC72042281400F6CD31 /* AthenaHacks */ = {
 			isa = PBXGroup;
 			children = (
+				FB72D2AC204284D2008F9A34 /* HDAugmentedReality */,
 				FB995AF62042343400F6CD31 /* View Controllers */,
 				FB995AC82042281500F6CD31 /* AppDelegate.swift */,
 				FB995ACA2042281500F6CD31 /* ViewController.swift */,
@@ -156,6 +222,8 @@
 				FB995ACF2042281500F6CD31 /* Assets.xcassets */,
 				FB995AD12042281500F6CD31 /* LaunchScreen.storyboard */,
 				FB995AD42042281500F6CD31 /* Info.plist */,
+				FB72D2C420428657008F9A34 /* Place.swift */,
+				FB995B0520427E6300F6CD31 /* PlacesLoader.swift */,
 			);
 			path = AthenaHacks;
 			sourceTree = "<group>";
@@ -313,8 +381,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB995AD32042281500F6CD31 /* LaunchScreen.storyboard in Resources */,
+				FB72D2C020428556008F9A34 /* hdar_close.png in Resources */,
 				FB995AD02042281500F6CD31 /* Assets.xcassets in Resources */,
+				FB72D2C320428556008F9A34 /* hdar_close@2x.png in Resources */,
 				FB995ACE2042281500F6CD31 /* Main.storyboard in Resources */,
+				FB72D2C120428556008F9A34 /* hdar_close@3x.png in Resources */,
+				FB72D2C220428556008F9A34 /* DebugMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +436,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework",
+				"${BUILT_PRODUCTS_DIR}/HDAugmentedReality/HDAugmentedReality.framework",
 				"${BUILT_PRODUCTS_DIR}/HyperTrack/HyperTrack.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
@@ -373,6 +446,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gzip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HDAugmentedReality.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyperTrack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
@@ -502,11 +576,19 @@
 				FB995AF82042346000F6CD31 /* LoginViewController.swift in Sources */,
 				FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */,
 				FB995AFA2042354D00F6CD31 /* ProfileViewController.swift in Sources */,
+				FB72D2B620428530008F9A34 /* ARConfiguration.swift in Sources */,
 				FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */,
+				FB995B0620427E6300F6CD31 /* PlacesLoader.swift in Sources */,
 				FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */,
 				FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */,
 				FB995B022042392E00F6CD31 /* RunViewController.swift in Sources */,
 				FB995AFC2042355D00F6CD31 /* StartRunViewController.swift in Sources */,
+				FB72D2BB20428542008F9A34 /* DebugMapViewController.swift in Sources */,
+				FB72D2C520428657008F9A34 /* Place.swift in Sources */,
+				FB72D2B720428530008F9A34 /* ARTrackingManager.swift in Sources */,
+				FB72D2B520428530008F9A34 /* ARAnnotationView.swift in Sources */,
+				FB72D2B820428530008F9A34 /* ARAnnotation.swift in Sources */,
+				FB72D2B420428530008F9A34 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import HyperTrack
+//import HyperTrack
 
 class LoginViewController: UIViewController {
 
@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        HyperTrack.createUser(usernameField.text!) { (user, error) in
+/*        HyperTrack.createUser(usernameField.text!) { (user, error) in
             if (error != nil) {
                 // Handle error on get or create user
                 print("recieved error while creating user. error : " + (error?.errorMessage)!)
@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
                 print("User created:", user!.id ?? "")
             }
         }
+ */
     }
     
     override func didReceiveMemoryWarning() {

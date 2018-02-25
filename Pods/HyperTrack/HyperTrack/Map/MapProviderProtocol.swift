@@ -25,7 +25,6 @@ import MapKit
     func getCameraHeading() -> CLLocationDirection
     func zoomTo(visibleRegion: MKCoordinateRegion, animated: Bool)
     func addPolyline(encodedPolyline: String,identifier:String)
-    func addPolyline(coordinates: [CLLocationCoordinate2D],identifier:String)
     func removePolylineWithIdentifier(identifier: String)
     func updatePolyline(polyline: String)
     func updatePolyline(polyline: String,startMarkerImage:UIImage?)
