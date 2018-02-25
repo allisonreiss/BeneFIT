@@ -44,8 +44,8 @@ class LoginViewController: UIViewController {
             if let user = user {
                 let uid = user.uid
                 let email = user.email
+                self.performSegue(withIdentifier: "toMapFromLogin", sender: self)
                 print(uid)
-                
             }
             if(user != nil) {
                 print("yay create user worked")
@@ -60,7 +60,6 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
     }
     
     override func didReceiveMemoryWarning() {

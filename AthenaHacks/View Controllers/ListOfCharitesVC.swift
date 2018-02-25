@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import Firebase
 
 class ListOfCharitesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var ref: DatabaseReference!
+    
     @IBOutlet weak var tableView: UITableView!
     var categorySelected: String?
     var list: NSArray?
+    var userUID: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
         
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -71,7 +77,16 @@ class ListOfCharitesVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let list = list {
             let charity = list[indexPath.row] as! NSDictionary
-            let charityName = charity["charityName"]
+            let charityName = charity["charityName"] as? String
+            
+            //self.ref.child("users").child(self.userUID!).setValue(["charity": charityName])
+            let alertController = UIAlertController(title: "Saved!",
+                                                    message: "You selected \(charityName!) as your charity!",
+                                                    preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+                self.performSegue(withIdentifier: "toMapSegue", sender: self)
+            })
+            present(alertController, animated: true)
         }
     }
     

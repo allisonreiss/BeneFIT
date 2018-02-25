@@ -14,7 +14,9 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     var categories: NSArray?
     var categorySelected: String?
+
     var gradient: CAGradientLayer!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +79,7 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ListOfCharitesVC
         destination.categorySelected = self.categorySelected
+ //       destination.userUID = self.userUID
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

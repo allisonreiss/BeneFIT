@@ -12,7 +12,7 @@ import MapKit
 
 class NewRunViewController: UIViewController {
 
-    @IBOutlet weak var labelView: UIView!
+    /*@IBOutlet weak var labelView: UIView!
     @IBOutlet weak var dataView: UIView!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -178,7 +178,7 @@ extension NewRunViewController: CLLocationManagerDelegate {
             
             locationList.append(newLocation)
         }
-    }
+    }*/
 }
 
 
