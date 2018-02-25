@@ -27,11 +27,14 @@ class ProfileViewController: UIViewController {
         
         profileImageView.layer.cornerRadius = 30
         profileImageView.clipsToBounds = true
+        var image: UIImage = UIImage(named: "owl")!
+        profileImageView = UIImageView(image: image)
         
         changeCharityButton.layer.cornerRadius = 15
         changeCharityButton.clipsToBounds = true
         donateNowButton.layer.cornerRadius = 15
         donateNowButton.clipsToBounds = true
+        
         
         // Do any additional setup after loading the view.
         // Set up the background gradient
