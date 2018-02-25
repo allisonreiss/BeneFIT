@@ -12,13 +12,14 @@ import MapKit
 
 /*class NewRunViewController: UIViewController {
 
-    @IBOutlet weak var labelStackView: UIStackView!
-    @IBOutlet weak var dataStackView: UIStackView!
+    @IBOutlet weak var labelView: UIView!
+    @IBOutlet weak var dataView: UIView!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var paceLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     //private var run: Run?
     private let locationManager = LocationManager.shared
@@ -30,7 +31,13 @@ import MapKit
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dataStackView.isHidden = true
+        dataView.isHidden = true
+        
+        startButton.layer.cornerRadius = 30
+        startButton.clipsToBounds = true
+        stopButton.layer.cornerRadius = 30
+        stopButton.clipsToBounds = true
+        stopButton.layer.zPosition = 1
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -40,10 +47,11 @@ import MapKit
     }
 
     private func startRun() {
-        labelStackView.isHidden = true
-        dataStackView.isHidden = false
+        labelView.isHidden = true
+        dataView.isHidden = false
         startButton.isHidden = true
         stopButton.isHidden = false
+        mapView.removeOverlays(mapView.overlays)
         
         seconds = 0
         distance = Measurement(value: 0, unit: UnitLength.meters)
@@ -56,8 +64,8 @@ import MapKit
     }
     
     private func stopRun() {
-        labelStackView.isHidden = false
-        dataStackView.isHidden = true
+        labelView.isHidden = false
+        dataView.isHidden = true
         startButton.isHidden = false
         stopButton.isHidden = true
         
@@ -150,10 +158,27 @@ extension NewRunViewController: CLLocationManagerDelegate {
             if let lastLocation = locationList.last {
                 let delta = newLocation.distance(from: lastLocation)
                 distance = distance + Measurement(value: delta, unit: UnitLength.meters)
+                let coordinates = [lastLocation.coordinate, newLocation.coordinate]
+                mapView.add(MKPolyline(coordinates: coordinates, count: 2))
+                let region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 500, 500)
+                mapView.setRegion(region, animated: true)
             }
             
             locationList.append(newLocation)
         }
     }
 }*/
+
+
+extension NewRunViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        guard let polyline = overlay as? MKPolyline else {
+            return MKOverlayRenderer(overlay: overlay)
+        }
+        let renderer = MKPolylineRenderer(polyline: polyline)
+        renderer.strokeColor = .blue
+        renderer.lineWidth = 10
+        return renderer
+    }
+}
 
