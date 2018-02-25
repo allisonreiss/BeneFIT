@@ -11,6 +11,7 @@ import CoreLocation
 
 class CameraViewController: UIViewController {
 
+   // var sceneLocationView = SceneLocationView()
 //    var sceneLocationView = SceneLocationView()
     
     override func viewDidLoad() {

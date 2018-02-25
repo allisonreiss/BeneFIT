@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class NewRunViewController: UIViewController {
+/*class NewRunViewController: UIViewController {
 
     @IBOutlet weak var labelView: UIView!
     @IBOutlet weak var dataView: UIView!
@@ -21,7 +21,7 @@ class NewRunViewController: UIViewController {
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     
-    private var run: Run?
+    //private var run: Run?
     private let locationManager = LocationManager.shared
     private var seconds = 0
     private var timer: Timer?
@@ -174,7 +174,7 @@ extension NewRunViewController: CLLocationManagerDelegate {
             locationList.append(newLocation)
         }
     }
-}
+}*/
 
 
 extension NewRunViewController: MKMapViewDelegate {
