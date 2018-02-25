@@ -11,6 +11,9 @@
 		267776752042D40800236CB2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267776742042D40800236CB2 /* SignUpViewController.swift */; };
 		267776772042DD1B00236CB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 267776762042DD1B00236CB2 /* GoogleService-Info.plist */; };
 		2677767B2042E5AD00236CB2 /* CharityCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2677767A2042E5AD00236CB2 /* CharityCategoryCell.swift */; };
+		2677767F2042F82700236CB2 /* ListOfCharitesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2677767E2042F82700236CB2 /* ListOfCharitesVC.swift */; };
+		267776812042F83C00236CB2 /* CharityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267776802042F83C00236CB2 /* CharityDetailsViewController.swift */; };
+		26777683204302BC00236CB2 /* CharityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26777682204302BC00236CB2 /* CharityCell.swift */; };
 		279F75833AE2C8C51DA1EE71 /* Pods_AthenaHacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB534032BF70A23C296BA2 /* Pods_AthenaHacksUITests.framework */; };
 		C910A2CD91C936DA60E60377 /* Pods_AthenaHacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */; };
 		E705EE586B9C424E3255BD9A /* Pods_AthenaHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7377ED41456424733333FDF2 /* Pods_AthenaHacks.framework */; };
@@ -61,6 +64,9 @@
 		267776762042DD1B00236CB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		267776782042E13D00236CB2 /* AthenaHacks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AthenaHacks.entitlements; sourceTree = "<group>"; };
 		2677767A2042E5AD00236CB2 /* CharityCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityCategoryCell.swift; sourceTree = "<group>"; };
+		2677767E2042F82700236CB2 /* ListOfCharitesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCharitesVC.swift; sourceTree = "<group>"; };
+		267776802042F83C00236CB2 /* CharityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityDetailsViewController.swift; sourceTree = "<group>"; };
+		26777682204302BC00236CB2 /* CharityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityCell.swift; sourceTree = "<group>"; };
 		37B23DE982BA4B8F5B4EB5F7 /* Pods_AthenaHacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthenaHacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B724AC09B15B69166BAB0 /* Pods-AthenaHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacks/Pods-AthenaHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		729BFAE163874F0F03A164B3 /* Pods-AthenaHacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthenaHacksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthenaHacksTests/Pods-AthenaHacksTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2677767A2042E5AD00236CB2 /* CharityCategoryCell.swift */,
+				26777682204302BC00236CB2 /* CharityCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,6 +254,8 @@
 				FB9290262042B22C00E2F0C5 /* NewRunViewController.swift */,
 				FB92902E2042B9EE00E2F0C5 /* RunDetailsViewController.swift */,
 				267776742042D40800236CB2 /* SignUpViewController.swift */,
+				2677767E2042F82700236CB2 /* ListOfCharitesVC.swift */,
+				267776802042F83C00236CB2 /* CharityDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -602,19 +611,19 @@
 			files = (
 				FB995AF82042346000F6CD31 /* LoginViewController.swift in Sources */,
 				FB9290332042BE0300E2F0C5 /* FormatDisplay.swift in Sources */,
+				267776812042F83C00236CB2 /* CharityDetailsViewController.swift in Sources */,
 				FB9290352042BE3300E2F0C5 /* LocationManager.swift in Sources */,
 				FB92902D2042B61300E2F0C5 /* MoonRunner.xcdatamodeld in Sources */,
 				FB995ACB2042281500F6CD31 /* ViewController.swift in Sources */,
+				2677767F2042F82700236CB2 /* ListOfCharitesVC.swift in Sources */,
 				267776752042D40800236CB2 /* SignUpViewController.swift in Sources */,
 				FB92902F2042B9EE00E2F0C5 /* RunDetailsViewController.swift in Sources */,
 				FB995AFA2042354D00F6CD31 /* ProfileViewController.swift in Sources */,
 				FB995AFE204238E200F6CD31 /* CharityViewController.swift in Sources */,
 				FB995B00204238F700F6CD31 /* CameraViewController.swift in Sources */,
 				FB9290372042C4DF00E2F0C5 /* MulticolorPolyline.swift in Sources */,
-
-				FB92902C2042B61300E2F0C5 /* CoreData in Sources */,
 				2677767B2042E5AD00236CB2 /* CharityCategoryCell.swift in Sources */,
-
+				26777683204302BC00236CB2 /* CharityCell.swift in Sources */,
 				FB9290312042BD6E00E2F0C5 /* UnitExtensions.swift in Sources */,
 				FB92903B2042F05100E2F0C5 /* CoreDataStack.swift in Sources */,
 				FB995AC92042281500F6CD31 /* AppDelegate.swift in Sources */,

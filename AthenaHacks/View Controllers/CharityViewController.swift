@@ -13,14 +13,13 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var categories: NSArray?
-    var user: AnyObject?
+    var categorySelected: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         tableView.delegate = self
-        
         let apikey = "6036d915f121c7d50b8f3d7bcc93796f"
         let url = URL(string: "https://data.orghunter.com/v1/categories?user_key=\(apikey)")
         let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -58,8 +57,16 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
-  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cat = categories![indexPath.row] as! [String:AnyObject]
+        self.categorySelected = cat["categoryId"] as? String
+        print(self.categorySelected)
+        performSegue(withIdentifier: "categorySelectedSegue", sender: self)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! ListOfCharitesVC
+        destination.categorySelected = self.categorySelected
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
